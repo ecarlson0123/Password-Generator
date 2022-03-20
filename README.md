@@ -47,4 +47,4 @@ Here you can see the program generating a 20 character randomized password using
 
 Repository can be accessed here: [Random password generator repository](https://github.com/ecarlson0123/password-generator)
 
-Deployed website can be accessed here: [Random password generator website]()
+Deployed website can be accessed here: [Random password generator website](https://ecarlson0123.github.io/password-generator/)
