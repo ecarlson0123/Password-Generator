@@ -22,29 +22,29 @@ THEN the password is either displayed in an alert or written to the page.
 ## How to do this:
 
 ### Create a function to set length:
-This function must accomplish two main objectives:
-1.) Ask the user the desired length of password.
-2.) When the user gives input, ensure that it is within the correct length and type requirements.
+This function must accomplish two main objectives:  
+1.) Ask the user the desired length of password.  
+2.) When the user gives input, ensure that it is within the correct length and type requirements.  
 
-If the  input is incorrect or unusable, the funciton must rerun.
+If the  input is incorrect or unusable, the funciton must rerun.  
 
 ### Create a function to set criteria:
 This function must ask, using a series of window alerts, which criteria and types shll be included in the password. Then followning the prompts, must confirm the selections are correct. If no criteria (text types) are selected, then notify the user that at least one must be selected, and rerun this function until the appropriate input is given.
 
 ### Use the results of the previous two functions to generate a random password:
-The length given will set the number of times a for loop adds a random character to the password.
-    -We cannot use a single string containing all viable characters, because the number of characters in each type is unequal, therefore the tendancy to select one type more would be a problem.
+The length given will set the number of times a for loop adds a random character to the password.  
+    -We cannot use a single string containing all viable characters, because the number of characters in each type is unequal, therefore the tendancy to select one type more would be a problem.  
 
-In order to solve this an array of types was created, and a random number was then used to select the type.
+In order to solve this an array of types was created, and a random number was then used to select the type.  
 
-After the type was selected, a random character of that type was selected and added to the password string. 
-    -One bug that came with this was that we could not set the initial password to "" because this returned an undefined error when trying to add to it, so it is initialized to the string "empty", then the last step before returning the password to the user, is to remove the first 5 characters.
+After the type was selected, a random character of that type was selected and added to the password string.   
+    -One bug that came with this was that we could not set the initial password to "" because this returned an undefined error when trying to add to it, so it is initialized to the string "empty", then the last step before returning the password to the user, is to remove the first 5 characters.  
 
 ## Results
 
-Here you can see the program generating a 20 character randomized password using; capital letters, lowercase letters, numbers, and special characters.
+Here you can see the program generating a 20 character randomized password using; capital letters, lowercase letters, numbers, and special characters.  
 ![Randomized 20 character password.](./assets/images/website.png)
 
-Repository can be accessed here: [Random password generator repository](https://github.com/ecarlson0123/password-generator)
-
-Deployed website can be accessed here: [Random password generator website](https://ecarlson0123.github.io/password-generator/)
+Repository can be accessed here: [Random password generator repository](https://github.com/ecarlson0123/password-generator)  
+ 
+Deployed website can be accessed here: [Random password generator website](https://ecarlson0123.github.io/password-generator/)  
